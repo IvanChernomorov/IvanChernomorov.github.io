@@ -104,7 +104,7 @@ th:not(even) {
     background-color: rgb(203, 203, 203);
 }
 
-#Таблица {
+.tabl {
     order: 1;
 }
 
@@ -128,7 +128,7 @@ th:not(even) {
     .navref {
         margin: 0;
     }
-    #Форма {
+    .frm {
         order: 2;
     }
 }
