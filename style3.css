@@ -8,6 +8,7 @@ h3 {
 
 .title {
     color: rgb(210, 210, 210);
+    font-size: 30px;
 }
 
 body {
@@ -27,6 +28,7 @@ main {
 
 .logo {
     margin-right: 20px;
+    width: 70px;
 }
 
 .flex-header {
@@ -55,7 +57,6 @@ main {
 }
 
 .container {
-    width: 100%;
     margin: 10px 0;
     background-color: rgb(161, 161, 161);
     padding: 2%;
@@ -86,8 +87,8 @@ table {
     text-align: center;
     border-spacing: 0;
     border: 1px solid black;
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
 }
 
 th,
@@ -108,7 +109,24 @@ th:not(even) {
     order: 1;
 }
 
-@media screen and (min-width: 800px) {
+.pic {
+    width: 250px;
+}
+
+@media screen and (min-width: 750px) {
+    table {
+        width: 400px;
+        height: 400px;
+    }
+    .pic {
+        width: 500px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .title {
+        font-size: 45px;
+    }
     .flex-header {
         justify-content: center;
     }
