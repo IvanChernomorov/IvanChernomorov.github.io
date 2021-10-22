@@ -1,5 +1,3 @@
-"use strict";
-
 function calc() {
     let price = document.getElementsByName("price");
     let quan = document.getElementsByName("quantity");
