@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+</head>
+<body>
+    <section>
+
+        <div>
+            <h1>Интернет магазин</h1>
+            <form>
+                <p>
+                    Введите цену товара:
+                    <input type="text" name="price">
+                </p>
+                <p>
+                    Введите нужное количество товара:
+                    <input type="text" name="quantity">
+                </p>
+                <button id="result">
+                    Расчитать
+                </button>
+            </form>
+        </div>
+        <div class="calc">
+            <h1>Калькулятор стоимости заказа и услуг</h1>
+            <div>
+                Выберете товар:<br>
+                <select name="myselect">
+                    <option value="0" disabled selected></option>
+                    <option value="1">Пицца пепперони</option>
+                    <option value="2">Кока-кола</option>
+                    <option value="3">Роллы филадельфия</option>
+                </select>
+            </div>
+           
+            <div id = "volume">
+                Выберите объём колы:
+                <label>
+                    <input type="radio" name="volume" value="60"> 0.25 литра
+                </label>
+                <label>
+                    <input type="radio" name="volume" value="90"> 0.5 литра
+                </label>
+                <label>
+                    <input type="radio" name="volume" value="150"> 1 литр
+                </label>
+            </div>
+            <div id="rolls">
+                Выберете дополнительные товары:
+                <label><input type="checkbox" name="addition" value = "60" >Соевый соус</label>
+                <label><input type="checkbox" name="addition" value = "45" >Васаби</label>
+                <label><input type="checkbox" name="addition" value = "50" >Имбирь</label>
+            </div>
+            <div>
+                Введите количество товара:<br>
+                <input type="number" name="colvo" min = "1">
+            </div>
+            <div>
+                Итоговая стоимость: <span class="result"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
