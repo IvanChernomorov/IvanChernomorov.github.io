@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="image.png" alt="Логотип" class="logo">
+        <h1 class="title">Задание 2</h1>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <nav>
+                    <ul>
+                       <li>
+                            <a href="#Ссылки">Список ссылок</a>
+                        </li>
+                        <li>
+                            <a href="#Таблица">Таблица</a>
+                        </li>
+                        <li>
+                            <a href="#Форма">Анкета</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <h2 id="Ссылки">Список гиперссылок</h2>
+                <ol>
+                    <li><a href="http://example.com">example.com</a></li>
+                    <li><a href="https://example.com">example.com в протоколе https</a></li>
+                    <li><a href="ftp://example.com/myfile.zip">Ссылка на файл на сервере FTP без авторизации</a></li>
+                    <li><a href="ftp://user:password@example.com/myfile.zip">Ссылка на файл на сервере FTP с
+                            авторизацией</a>
+                    </li>
+                    <li><a href="https://ru.wikipedia.org/wiki/HTML#Версии">Ссылка на фрагмент другой страницы</a></li>
+                    <li><a href="#Форма">Ссылка на фрагмент этой страницы</a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Сайт?veaction=edit&section=1">Ссылка с двумя параметрами
+                            в
+                            URL</a></li>
+                    <li> Список ссылок основной навигации <em>stackoverflow</em> подписями title: <br>
+                        <a href="https://stackoverflow.com/company" title="Описание сервиса"> About
+                        </a>
+                        | <a href="https://stackoverflow.com/company/leadership" title="Руководство"> Leadership
+                        </a>
+                        | <a href="https://stackoverflow.com/company/careers" title="О работе в stackoverflow"> Careers
+                        </a>
+                        | <a href="https://stackoverflow.com/company/work-here" title="Доступные вакансии"> Open
+                            position
+                        </a>
+                        | <a href="https://stackoverflow.com/company/press" title="Пресса"> Press
+                        </a>
+                        | <a href="https://stackoverflow.com/company/research" title="Исследования"> Research
+                        </a>
+                        | <a href="https://stackoverflow.com/company/contact" title="Контактные данные"> Contact us
+                        </a>
+                    </li>
+                    <li><a>Ссылка без href</a></li>
+                    <li><a href="">Ссылка с пустым href</a></li>
+                    <li><a href="http://example.com" rel="nofollow">Ссылка, </a>по которой запрещен переход поисковикам
+                    </li>
+                    <li>
+                        <noindex--><a href="http://example.com">Ссылка,</a> запрещённая для индексации поисковиками
+                        </noindex-->
+                    </li>
+                    <li>Контекстная ссылка внутри текста:<br>
+                        Сайт, или веб-сайт, также веб-узел, — одна или несколько логически связанных между собой <a
+                            href="https://ru.wikipedia.org/wiki/Веб-страница">веб-страниц</a>.
+                    </li>
+                    <li>Ссылка-картинка:<br><a href="https://ru.wikipedia.org/wiki/Вымеобразное_облако"><img
+                                alt="Вымяобразное облако" id="Cloud"
+                                src="https://img-fotki.yandex.ru/get/5205/137106206.5ec/0_163168_27cf5890_orig.jpg"
+                                height="300" width="500"></a></li>
+                    <li>Ссылки из прямоугольных и круглых областей картинки:<br><img
+                            src="https://oir.mobi/uploads/posts/2020-01/1578218664_19-46.jpg" alt="фигуры"
+                            usemap="#figures" height="350" width="500">
+                        <map name="figures">
+                            <area alt="Круг" shape="circle"
+                                href="https://ru.wikipedia.org/wiki/Круг,_Михаил_Владимирович" coords="120,250,75"
+                                title="Круг">
+                            <area alt="Прямоугольник" shape="rect" href="https://ru.wikipedia.org/wiki/Прямоугольник"
+                                coords="30,15,215,125" title="Прямоугольник">
+                        </map>
+                    </li>
+                    <li><a href="./example.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                    <li><a href="./about/example.html">Относительная ссылка на страницу в каталоге about</a></li>
+                    <li><a href="../example.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+                    </li>
+                    <li><a href="../../example.com">Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
+                    </li>
+                    <li><a href="/">Сокращённая ссылка на главную страницу</a></li>
+                    <li><a href="/example.html">Cокращенная ссылка на внутреннюю страницу</a></li>
+                </ol>
+            </div>
+            <div class="container">
+                <h2 id = "Таблица">Таблица</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th class = "even">2</th>
+                            <th>3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class = "even">4</td>
+                            <td>5</td>
+                            <td class = "even">6</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class = "even">8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td class = "even">10</td>
+                            <td>11</td>
+                            <td class = "even" >12</td>
+                        </tr>
+                        <tr>
+                            <td rowspan = 2>13</td>
+                            <td class = "even" >14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td colspan = "2" class = "even">16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <h2 id="Форма">Анкета</h2>
+                <form>
+                    <p>
+                        <b>Ваше имя</b><br>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <b>Электронная почта</b><br>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <b>Дата рождения</b><br>
+                        <input type="date" name="birthdate">
+                    </p>
+                    <p>
+                        <b>Пол</b><br>
+                        <input type="radio" name="sex" value="male">Мужской<br>
+                        <input type="radio" name="sex" value="female">Женский
+                    </p>
+                    <p>
+                        <b>Количество конечностей</b><br>
+                        <input type="radio" name="limbs" value="2">2<br>
+                        <input type="radio" name="limbs" value="3">3<br>
+                        <input type="radio" name="limbs" value="4">4<br>
+                        <input type="radio" name="limbs" value="5+">5+
+                    </p>
+                    <p>
+                        <b>Сверхспособности</b><br>
+                        <select>
+                            <option disabled selected>Выберете сверхспособность</option>
+                            <option value="fly">Левитация</option>
+                            <option value="immortality">Бессмертие</option>
+                            <option value="transparency">Прохождение сквозь стены</option>
+                            <option value="session">Сдача сессии на "отлично"</option>
+                        </select>
+                    </p>
+                    <p>
+                        <b>Биография</b><br>
+                        <textarea wrap="hard" name="biography" rows="10" cols="45"
+                            placeholder="Введите вашу биографию"></textarea>
+                    </p>
+                    <p>
+                        <strong>С контрактом ознакомлен</strong>
+                        <input type="checkbox" name="approval" value="agree">
+                    </p>
+                    <p>
+                        <input type="submit">
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3 class="copyrate">(с) Иван Черноморов 2021</h3>
+    </footer>
+</body>
+
+</html>
