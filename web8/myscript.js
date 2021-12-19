@@ -29,7 +29,7 @@ function clear(){
     namefield[0].value = "";
     email[0].value = "";
     message[0].value = "";
-    agree[0].removeAttribute("checked");
+    agree[0].checked = false;
 
 }
 
